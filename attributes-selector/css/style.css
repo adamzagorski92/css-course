@@ -1,0 +1,40 @@
+/*  An atribute selector */
+
+a[target] {
+    color: red;
+}
+
+a[title="Exact value"] {
+    background-color: orange;
+}
+
+/* To będzie łapało tylko wartość oddzieloną spacjami. Dla przykładu secondValue lub valueNext już by nie złapała */
+a[title~="value"] {
+ font-size: 2em;
+}
+
+/* To będzie łapało wszystkie wartości z wystąpieniem value */
+a[title*="value"] {
+ text-decoration: none;
+}
+
+/* Wystąpienie na początku ciągu znaków */
+a[href^="https"] {
+    background-color: green;
+}
+
+/* Wystąpienie na końcu ciągu znaków */
+a[href$=".zip"] {
+    background-color: rgb(128, 0, 75);
+    color: yellow;
+}
+
+/* 
+~= wartość musi być oddzielona
+*= wartość może być częścią całej wartości atrybutu
+^= wartość występuje na początku
+$= wartość występuje na końcu
+
+znacznik[atrybut="wartość"]
+
+ */

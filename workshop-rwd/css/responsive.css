@@ -1,0 +1,39 @@
+/* Size of screen:
+### <576px ### Extra small
+### >=576px ### Small
+### >=768px ### Medium
+### >=992px ### Large
+### >=1200px ## Extra Large
+*/
+
+#gallery {
+    width: 80%;
+}
+
+@media screen and (min-width:993px) {
+    #gallery {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    figure {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    figure {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #gallery {
+        width: 100%;
+    }
+
+    figure {
+        width: 100%;
+    }
+}

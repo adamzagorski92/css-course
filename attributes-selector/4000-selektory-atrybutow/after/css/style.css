@@ -1,0 +1,28 @@
+/* Selektory atrybutów */
+
+a[target] {
+    color: red;
+}
+
+
+a[title="Exact value"] {
+    background-color: orange;
+}
+
+
+a[title~="value"] {
+    font-size: 2em;
+}
+
+a[title*="value"] {
+    text-decoration: none;
+}
+
+
+a[href^="https"] {
+    background-color: green;
+}
+
+a[href$=".zip"] {
+    color: yellow;
+}

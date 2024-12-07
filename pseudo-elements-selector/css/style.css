@@ -1,0 +1,71 @@
+/* Selektrory pseudoelementów */
+
+body {
+    display: block;
+    margin: 4em;
+
+}
+
+#main-heading::before {
+    content: "*";
+    color: red; 
+}
+#main-heading::after {
+    content: "$";
+    color: red; 
+}
+
+#main-heading {
+    font-size: 100px;
+}
+
+button {
+    background-color: pink;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+button::before {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+    border-color: pink;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    left: -5px;
+    top: -5px;
+}
+
+button::after {
+border-color: transparent;
+-webkit-transition: all 0.25s;
+transition: all 0.25s;
+border-style: solid;
+border-width: 0;
+content: "";
+height: 24px;
+position: absolute;
+width: 24px;
+border-bottom-width:2px ;
+border-color: pink;
+border-right-width:2px ;
+bottom: -5px;
+right: -5px;
+}

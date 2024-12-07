@@ -1,0 +1,16 @@
+* {
+    color: black;
+    font-size: 1.2em;
+}
+
+img {
+    width: 200px;
+}
+
+.image {
+    float: left;
+}
+
+.clear-float {
+    clear: both; /* Ta funkcja czyści opływanie z obu stron. Istnieje jeszcze możliwość usunięcia opływania z lewej oraz prawej strony, ale najczęściej jest stosowane z obu stron czyli both */
+}

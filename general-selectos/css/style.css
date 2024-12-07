@@ -1,0 +1,72 @@
+/* Selektro znacznika */
+h2 {
+    color: #00f;
+    font-size: 2.3em;
+}
+
+/* Selektor ID */
+
+#main-section {
+    background-color: aqua;
+}
+
+/* Selektor klasy */
+
+.first-paragraph {
+    color: brown;
+}
+
+/* Reguła kaskadowości -regula napisana później nadpisuje tę napisaną wcześniej */
+
+p {
+    background-color: yellow;
+}
+p {
+    background-color: green;
+}
+
+/* Złożone selektory */
+
+li, p, footer {
+    margin-bottom: 30px;
+}
+
+/* Wszystkie znaczniki a bezpośrednio zagnieżdżone w section */
+section > a {
+    color: red;
+}
+
+/* Wszystkie znaczniki a bez wzgledu na poziom zagnieżdzenia */
+section a {
+    font-size: 2em;
+
+}
+
+/* Wszystkie znaczniki p które są BEZPOŚREDNIM rodzeństwem h2 */
+h2+p {
+
+line-height: 2em;
+}
+
+/* Wszystkie znaczniki p które są rodzeństwem h2 */
+
+h2~p {
+
+    line-height: 3em;
+    }
+
+/* Selektor uniwersalny 
+    ### Pozwala na zmianę wszystkich znaczników
+    ### W praktyce ma jedno zastosowane {komentarz niżej}
+*/
+
+* {
+    color: orange;
+    box-sizing: border-box; /* to jest ta własciwość, której się używa do wszystkich znaczników */
+}
+
+/* Selektro "tylko - only' */
+
+a.link { /* styluje to tylko znacznik a z klasą link */
+ background-color: pink;
+}

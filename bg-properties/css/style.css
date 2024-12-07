@@ -1,0 +1,30 @@
+
+.background-container {
+    height: 600px;
+    width:  600px;
+    border: 3px solid #ff0000;
+    background-color: rgba(255, 166, 0, 0.5);
+    background-image: url(../img/bridge.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Syntax: background: [kolor] [obraz] [pozycja] / [rozmiar] [powtarzanie] [pochodzenie] [przyczepność];
+
+[kolor] background-color: lightblue;
+[obraz] background-image: url('image.jpg');
+[pozycja] background-position: center top;
+[rozmiar] background-size: cover;
+[powtarzanie] background-repeat: no-repeat;
+[pochodzenie] background-origin: padding-box;
+[przyczepność] background-attachment: fixed;
+
+
+ */
+.custom-bg-container {
+    height: 800px;
+    width: 800px;
+    border: 3px dashed #ff0000;
+    background: #0ff url(../img/bridge.webp) top/ cover no-repeat;
+}

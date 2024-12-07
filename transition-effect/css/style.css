@@ -1,0 +1,26 @@
+/* 
+transition: [właściwość] [czas trwania] [funkcja timingowa] [czas opóźnienia];
+można ustawiać po przecinku kilka różnych właściwości
+*/
+
+.box {
+    height: 300px;
+    width: 600px;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 2s linear 2s, width 1s ease-in-out 0.5s;
+
+}
+
+ /*
+ Te funkcje można zapisać za pomocą jednego słowa: transition. Przykład powyżej^^^
+  transition-duration: 2s;  streuje czasem animacji 
+  transition-property: all;  które elementy mają ulegać animacji, na przykład sam kolor lub wszystkie
+  transition-timing-function: linear;
+  transition-delay: 2s; 
+*/
+
+.box:hover {
+    background-color: orange;
+    width: 800px;
+}

@@ -1,0 +1,37 @@
+body {
+    width: 50%;
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    border: 1px white solid;
+}
+
+.container div {
+    height: 50px;
+    background-color: orange;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container {
+    font-size: 30px;
+    background-color: pink;
+}
+
+.px {
+    width: 600px;
+}
+
+.percent {
+    width: 40%;
+}
+
+.em {
+    width: 25em;
+    font-size: 1.2em;
+}
+
+div .viewport {
+    height: 60vh;
+    width: 50vw;
+}

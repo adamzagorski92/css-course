@@ -1,0 +1,42 @@
+/* Selektory pseudoklas */
+
+.link:hover {
+    color: orange;
+}
+
+input:focus {
+    background-color: orchid;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-child(5) {
+    color: green;
+}
+
+li:nth-child(even) {
+    background-color: aqua;
+}
+
+li:nth-child(3n + 1) {
+    font-size: 2em;
+}
+
+section p:nth-of-type(1) {
+    color: white;
+    background-color: gray;
+    padding: 10px;
+}
+
+/* 
+### even – parzyste elementy potomne
+### odd – nieparzyste elementy potomne
+### liczba – np. 5, selektor wskaże piąty element potomny
+### an+b – wartości a i b muszą być liczbami całkowitymi (dodatnimi, ujemnymi lub równe zero) – Liczba a oznacza co którą liczbę selektor ma wskazywać kolejne elementy potomne, a liczba b oznacza przesunięcie, czyli od którego elementu potomnego ma zacząć się odliczanie 
+*/

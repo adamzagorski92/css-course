@@ -1,0 +1,17 @@
+/* Specyficzność selektorów */
+
+#main-heading {
+    color: orange;
+}
+
+.heading {
+    color: blue;
+}
+
+h1 {
+    color: green !important;
+}
+
+* {
+    color: red;
+}

@@ -1,0 +1,31 @@
+/* 
+Specyficzność selektorów 
+Przeglądarka będzie brała pod uwagę selektroy ktróre są bardziej specyficzne lekceważąć* kaskadowość.
+*/
+
+/*   
+Specyficzność selektrów: https://tuts108.com/wp-content/uploads/2022/10/CSS-Specificity-full.png 
+
+Kalkulator specyficzności selektorów: https://specificity.keegan.st/
+
+*/
+
+
+
+#main-heading {
+    color: orange;
+}
+
+.heading {
+    color: blue;
+}
+
+h1 {
+    color: green !important;
+}
+
+* {
+    color: red;
+}
+
+

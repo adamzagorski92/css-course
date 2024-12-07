@@ -1,0 +1,50 @@
+/* Selektor znacznika */
+h2 {
+    color: #00f;
+    font-size: 2.3em;
+}
+
+/* Selektor id */
+#main-section {
+    background-color: aqua;
+}
+
+/* Selektor klasy */
+.first-paragraph {
+    color: brown;
+}
+
+/* Kaskadowość */
+p {
+    background-color: yellow;
+}
+
+p {
+    background-color: green;
+}
+
+
+/* Złożone selektory */
+
+li,
+p,
+footer {
+    margin-bottom: 30px;
+}
+
+section > a {
+    color: red;
+}
+
+section a {
+    font-size: 2em;
+}
+
+h2 + p {
+   line-height: 2; 
+}
+
+
+h2 ~ p {
+    font-size: 3em;
+}

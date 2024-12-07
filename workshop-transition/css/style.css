@@ -1,0 +1,39 @@
+/* 
+transition: [właściwość] [czas trwania] [funkcja timingowa] [czas opóźnienia];
+można ustawiać po przecinku kilka różnych właściwości
+*/
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+
+}
+
+.red-box {
+    background-color: #ff0000;
+    transition: width 2s ease-in-out;
+}
+
+.red-box:hover {
+    width: 300px;
+}
+
+.blue-box {
+    background-color: #00ff00;
+    transition: height 2s ease-in;
+}
+
+.blue-box:hover {
+    height:300px;
+}
+
+.green-box {
+    background-color: #0000ff;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.green-box:hover {
+    width: 300px;
+    height: 300px;
+}
+

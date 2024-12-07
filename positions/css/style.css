@@ -1,0 +1,84 @@
+/* 
+### static- ustawia element docelowo w górnym lewym rogu strony i nie można sterować jego pozycją
+
+### relative - ustawia element w tym samym miejscu co sicky, natomiast pozwala już na sterowanie nim względem początkowej jego pozycji za pomocą top right bottom left
+
+### absolute - pozwala sterować elementem za pomocą top right bottom left względem górnych krawędzi przeglądarki, chyba że po drodze spotka element, który nie ma ustawionej pozycji static. Najczęściej używa się go względem swojego rodzica ustawiając rodzicowi pozycję relative, a dziecku absolute. Dzięki czemu można przejąć kontrolę nad ułożeniem elementów w konkretnej sekcji. A więc:
+.rodzic { position: relative;}
+.dziecko {position: absolute;}
+
+### fixed - pozwala ustawiać element względem krawędzi przeglądarki za pomocą top right bottom left. Często używane do ustawiania przycisków funkcjonalnych, które są przydatne dla użytkownika. Na przykład strzałka powrotu na górę strony.
+
+### sticky - przykleja element względem krawędzi przeglądarki.
+
+### z-index - ustawia kolejność elementów na stronie. Im większy indeks, tym element jest wyżej. Domyślnie przeglądarka nakłada na górę elementy te, które występują później w kodzie.
+*/
+
+
+* {
+    color: white;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.gray {
+    width: 600px;
+    height: 500px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+
+}
+
+.orange {
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+
+}
+
+.dark-gray {
+    background-color: darkgray;
+    width: 300px;
+    height: 200px;
+
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 40px;
+
+}
+
+.relative-box {
+    position: relative;
+
+}
+
+.absolute {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.fixed {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    background-color: orange;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    height: 100px;
+    z-index: 5;
+
+}

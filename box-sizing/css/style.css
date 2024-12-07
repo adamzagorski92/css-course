@@ -1,0 +1,16 @@
+/* 
+box-sizing: border-box pozwala wliczyć szerokość paddingu oraz mariinesu do całego wymiaru elementu. Dzięki czemu podczas programowania nie trzeba doliczać dodatkowo marginesów i zastanawiać się jak tu używać procentów i dlaczego elementy mi uciekają lub są dziwnie poukładane. Ta funkcja daje lepszą kontrolę nad wymiarami.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    border: 10px solid orange;
+    padding: 30px;
+    background-color: gray;
+    color: white;
+    width: 300px;
+    margin: auto;
+}

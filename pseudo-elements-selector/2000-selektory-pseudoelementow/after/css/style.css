@@ -1,0 +1,16 @@
+/* Sekeltory pseudoelementów */
+#main-heading::before {
+    content: "*";
+    color: red;
+}
+
+
+#main-heading::after {
+    content: "$";
+    color: blue;
+}
+
+
+#main-heading {
+    font-size: 16px;
+}
