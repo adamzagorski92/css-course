@@ -1,0 +1,53 @@
+body {
+    background-color:#213b50;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0;
+    padding: 10px;
+    gap: 3px;
+}
+
+input, select, textarea {
+    display: inline-block;
+    background-color: #2b4a64;
+    border: none;
+    height: 2em;
+    color: white;
+}
+input:focus, select:focus, textarea:focus {
+    background-color: #61acea;
+    color: whitesmoke;
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: solid 1px;
+
+}
+
+
+p+ input[type="radio"] {
+    display: inline-block;
+}
+
+input[type="radio"], label {
+    vertical-align: middle; /* Wyrównanie w pionie */
+  }
+
+p + input[type="radio"] + label {
+    display: inline;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+
+}
