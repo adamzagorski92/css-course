@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-box {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5px;
+    gap: 10px;
+}
+
+div .box {
+    flex: 1 1 30%;
+    aspect-ratio: 1;
+    background-color: green;
+    position: relative;
+}
+
+.circle {
+    width: 50%;
+    background-color: rgb(234, 255, 0);
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+div .circle {
+    flex: 1 1 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(238, 255, 6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

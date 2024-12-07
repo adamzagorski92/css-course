@@ -1,0 +1,66 @@
+/* Kolory kwadratów */
+
+div .box:nth-of-type(1) {
+    background-color: #f00;
+}
+div .box:nth-of-type(2) {
+    background-color: #00f;
+}
+div .box:nth-of-type(3) {
+    background-color: #0f0;
+}
+div .box:nth-of-type(4) {
+    background-color: #eeff00;
+}
+div .box:nth-of-type(5) {
+    background-color: #000;
+}
+div .box:nth-of-type(6) {
+    background-color: #ff9000;
+}
+div .box:nth-of-type(7) {
+    background-color: #9d00ff;
+}
+div .box:nth-of-type(8) {
+    background-color: #6f6f6f;
+}
+div .box:nth-of-type(9) {
+    background-color: #fb95f4;
+}
+
+/* Kolory kółek */
+
+div .circle-color1 {
+    background-color: #fb95f4;
+}
+div .circle-color2 {
+    background-color: #6f6f6f;
+}
+
+div .circle-color3 {
+    background-color: #9d00ff;
+}
+
+div .circle-color4 {
+    background-color: #0f0;
+}
+
+div .circle-color5 {
+    background-color: #f00;
+}
+
+div .circle-color6 {
+    background-color: #00f;
+}
+
+div .circle-color7 {
+    background-color: #ff9000;
+}
+
+div .circle-color8 {
+    background-color: #eeff00;
+}
+
+div .circle-color9 {
+    background-color: #000;
+}
