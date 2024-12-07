@@ -1,53 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color:#213b50;
+    background-color: #213b50;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     width: 100vh;
 }
 
 form {
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     margin: 0;
     padding: 10px;
     gap: 3px;
 }
 
-input, select, textarea {
+form label,
+form p {
+    display: flex;
+    flex-basis: 100%;
+}
+
+form input[type="radio"] {
     display: inline-block;
-    background-color: #2b4a64;
-    border: none;
-    height: 2em;
-    color: white;
-}
-input:focus, select:focus, textarea:focus {
-    background-color: #61acea;
-    color: whitesmoke;
+    margin-right: 5px; /* Odstęp między radio buttonem a jego etykietą */
 }
 
-input:focus-visible, select:focus-visible, textarea:focus-visible {
-    outline: solid 1px;
-
+form .radio-group {
+    display: flex;
+    flex-direction: row; /* Wyświetlanie radio buttonów w rzędzie */
+    align-items: center; /* Wyrównanie w pionie */
+    flex-basis: 100%; /* Każda grupa zajmuje pełną szerokość */
+    margin-bottom: 10px; /* Odstęp między grupami */
 }
 
-
-p+ input[type="radio"] {
+form .radio-group label {
     display: inline-block;
-}
-
-input[type="radio"], label {
-    vertical-align: middle; /* Wyrównanie w pionie */
-  }
-
-p + input[type="radio"] + label {
-    display: inline;
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-
+    margin-right: 10px; /* Odstęp między etykietą a kolejnym radio buttonem */
 }
