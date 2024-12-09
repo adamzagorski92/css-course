@@ -1,211 +1,237 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 section {
-    display: flex;
-    position: relative;
+	display: flex;
+	position: relative;
 }
 
-
 .bomb-place {
-    width: 80vw;
-    height: 80vh;
-    background-image: url(../img/bomb-side.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+	width: 80vw;
+	height: 80vh;
+	background-image: url(../img/bomb-side.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
 }
 
 .bomb-place .bomb {
-    position: absolute;
-    top: 70%;
-    right: 35%;
+	position: absolute;
+	top: 70%;
+	right: 35%;
 }
 
-.bomb-place .bomb img {
-    width: 60px;
-    height: 60px;
-    animation: hurryUp 3s infinite;
+.bomb-place
+	.bomb
+	img {
+	width: 60px;
+	height: 60px;
+	animation: hurryUp
+		3s infinite;
 }
 
 .bomb-place .clock {
-    position: absolute;
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-    right: 10px;
-    border-radius: 10px;
+	position: absolute;
+	background-color: black;
+	padding: 10px;
+	margin: 10px;
+	right: 10px;
+	border-radius: 10px;
 }
 
-.bomb-place .clock p {
-    font-size: 30px;
-    font-family: monospace;
-    display: block;
-    width: 100px;
-    height: 40px;
-    background-color: rgba(251, 255, 0, 0.886);
-    color: red;
-    text-align: center;
-    line-height: 40px;
-    margin: 0;
-    border-radius: 10px;
+.bomb-place
+	.clock
+	p {
+	font-size: 30px;
+	font-family: monospace;
+	display: block;
+	width: 100px;
+	height: 40px;
+	background-color: rgba(
+		251,
+		255,
+		0,
+		0.886
+	);
+	color: red;
+	text-align: center;
+	line-height: 40px;
+	margin: 0;
+	border-radius: 10px;
 }
 
-.bomb-place .clock p::after {
-    content: "0:10";
-    animation: countdown 12s infinite;
+.bomb-place
+	.clock
+	p::after {
+	content: '0:10';
+	animation: countdown
+		12s infinite;
 }
 
 .boom {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    animation: boom 3s infinite;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	animation: boom 3s
+		infinite;
 }
 
 .love {
-    display: block;
-    background-color: transparent;
-    color: black;
-    font-family: monospace;
-    width: 80vw;
-    height: 80vh;
-    position: absolute;
-    margin: 0;
-    animation: love 12s infinite;
+	display: block;
+	background-color: transparent;
+	color: black;
+	font-family: monospace;
+	width: 80vw;
+	height: 80vh;
+	position: absolute;
+	margin: 0;
+	animation: love
+		12s infinite;
 }
 
 .love::after {
-    content: "";
-    animation: love 10s infinite;
+	content: '';
+	animation: love
+		10s infinite;
 }
 
+@keyframes countdown {
+	0% {
+		content: '0:10';
+	}
+	8% {
+		content: '0:09';
+	}
+	16% {
+		content: '0:08';
+	}
+	24% {
+		content: '0:07';
+	}
+	32% {
+		content: '0:06';
+	}
+	40% {
+		content: '0:05';
+	}
+	48% {
+		content: '0:04';
+	}
+	56% {
+		content: '0:03';
+	}
+	64% {
+		content: '0:02';
+	}
+	72% {
+		content: '0:01';
+	}
+	80% {
+		content: 'boom';
+	}
+	100% {
+		content: '0:10';
+	}
+}
 
-    @keyframes countdown{
-        0% {
-            content: "0:10";
-            }
-        8% {
-            content: "0:09";
-        }
-        16% {
-            content: "0:08";
-        }
-        24% {
-            content: "0:07";
-        }
-        32% {
-            content: "0:06";
-        }
-        40% {
-            content: "0:05";
-        }
-        48% {
-            content: "0:04";
-        }
-        56% {
-            content: "0:03";
-        }
-        64% {
-            content: "0:02";
-        }
-        72% {
-            content: "0:01";
-        }
-        80% {
-            content: "boom";
-        }
-        100% {
-            content: "0:10";
-        }
-        }
+@keyframes hurryUp {
+	0% {
+		transform: scale(
+				1.1
+			)
+			rotate(0deg);
+	}
+	25% {
+		transform: scale(
+				1
+			)
+			rotate(-10deg);
+	}
+	50% {
+		transform: scale(
+				0.9
+			)
+			rotate(10deg);
+	}
+	75% {
+		transform: scale(
+				1
+			)
+			rotate(-10deg);
+	}
+	100% {
+		transform: scale(
+				1.1
+			)
+			rotate(0deg);
+	}
+}
 
-    @keyframes hurryUp {
-        0% {
-            transform: scale(1.1) rotate(0deg);
-        }
-        25% {
-            transform: scale(1) rotate(-10deg);
-        }
-        50% {
-            transform: scale(0.9) rotate(10deg);
-        }
-        75% {
-            transform: scale(1) rotate(-10deg);
-        }
-        100% {
-            transform: scale(1.1) rotate(0deg);
-        }
-    }
+@keyframes boom {
+	0% {
+		background-color: transparent;
+	}
+	10% {
+		background-image: url(../img/boom.png);
+		background-position: center;
+		background-size: cover;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
 
-    @keyframes boom {
-        0% {
-            background-color: transparent;
-        }
-        10% {
-            background-image: url(../img/boom.png);
-            background-position: center;
-            background-size: cover;
-            
-        }
-        100% {
-            background-color: transparent;
-        }
-    }
-
-    @keyframes love {
-        0% {
-            background-color: transparent;
-            content: "";
-        }
-        10% {
-            background-color: #f00;
-            content:"I love CSS :)";
-            color: white;
-            font-family: monospace;
-            font-size: 60px;
-        }
-        100% {
-            background-color: transparent;
-            content: "";
-        }
-    }
-
+@keyframes love {
+	0% {
+		background-color: transparent;
+		content: '';
+	}
+	10% {
+		background-color: #f00;
+		content: 'I love CSS :)';
+		color: white;
+		font-family: monospace;
+		font-size: 60px;
+	}
+	100% {
+		background-color: transparent;
+		content: '';
+	}
+}
 
 .love {
-    animation-name: love;    
-    animation-delay: 9s;
-    animation-duration: 12s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-
+	animation-name: love;
+	animation-delay: 9s;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
 .animate {
-    animation-name: countdown;
-    animation-duration: 12s;
-    animation-delay: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+	animation-name: countdown;
+	animation-duration: 12s;
+	animation-delay: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
-.hurryUp-animate{ 
-    animation-name: hurryUp;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+
+.hurryUp-animate {
+	animation-name: hurryUp;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
+
 .boom-animation {
-    animation-name: boom;
-    animation-delay: 8.5s;
-    animation-duration: 12s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+	animation-name: boom;
+	animation-delay: 8.5s;
+	animation-duration: 12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
-
-
-
+/* Spróbj tę animacje synchronizować w jednym keyframes */
 
